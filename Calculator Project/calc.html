@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR PROJECT !</title>
+        <link rel="stylesheet" href="calc.css"/>
+        <script type="text/javascript" src="calc.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calc-container">
+                <div class="input-container">
+                    <input type="text" id="writebox" value=""  placeholder="0" width="250px"/>
+                </div>
+                <div class="output-container">
+                    <input type="text" id="outputbox" value=""  placeholder="0" width="250px"/>
+                </div>
+                <div class="controls-container">
+                    <table>
+                        <tr>
+                            <td><button id="clear" onclick="erase()">C</button></td>
+                            <td><button id="delete" onclick="del()" >DEL</button></td>
+                            <td><button id="operator" value="" onclick="percentage()">%</button></td>
+                            <td><button id="operator" value="" onclick="divison()">/</button></td>
+                        </tr>
+                        <tr>
+                            <td> <button id="input-value" value="" onclick="seven()" >7</button></td>
+                            <td> <button id="input-value" value="" onclick="eight()">8</button></td>
+                            <td> <button id="input-value" value="" onclick="nine()">9</button></td>
+                            <td> <button id="operator" value="" onclick="multiplication()">*</button></td>
+                        </tr><tr>
+                            <td> <button id="input-value" value="" onclick="four()">4</button></td>
+                            <td><button id="input-value" value="" onclick="five()">5</button></td>
+                            <td> <button id="input-value" value="" onclick="six()">6</button></td>
+                            <td> <button id="operator" value="" onclick="subtraction()">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="input-value" value="" onclick="one()">1</button></td>
+                            <td><button id="input-value" value="" onclick="two()">2</button></td>
+                            <td><button id="input-value" value="" onclick="three()">3</button></td>
+                            <td><button id="operator" value="" onclick="addition()">+</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button id="input-value" value="" onclick="zero()">0</button></td>
+                            <td></td>
+                            <td><button id="equal" value="" onclick="equal()">=</button></td>
+                        </tr>
+                </table>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
